@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST.PLAY Foundation</title>
+    <link rel="stylesheet" href="Homestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Ensure you include Swiper CSS for the testimonials -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>JUST.PLAY Foundation</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="image-slider" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="GIF.gif" alt="Image 1" class="slider-img">
+            </div>
+            <!-- More images as needed -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-images">
+            <img src="1.png" alt="" class="about-img">
+            <img src="2.png" alt="" class="about-img">
+            <img src="3.png" alt="" class="about-img">
+            <img src="4.png" alt="" class="about-img">
+            <img src="5.png" alt="" class="about-img">
+        </div>
+        <p><a href="external_about_us_page.html" class="learn-more">Learn more...</a></p>
+    </section>
+    <section id="programs">
+        <h2>Our Programs</h2>
+        <div class="programs-content">
+            <div class="video-container">
+                <video controls>
+                    <source src="your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text-container">
+                <p>Learn about our innovative approaches to educating children through play. Our programs are designed to engage and inspire, promoting life skills in fun and active ways.</p>
+                <a href="more_programs.html" class="learn-more">Learn more...</a>
+            </div>
+        </div>
+    </section>
+    <section id="donate">
+        <div class="donate-container">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="submit_contact.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="donation-form">
+                <h2>Come Support Us</h2>
+                <form action="process_donation.php" method="POST">
+                    <label for="donor-name">Name (optional):</label>
+                    <input type="text" id="donor-name" name="donor_name">
+                    <label for="donation-amount">Donation Amount ($):</label>
+                    <input type="number" id="donation-amount" name="amount" required min="1">
+                    <label for="donation-message">Message (optional):</label>
+                    <textarea id="donation-message" name="donation_message"></textarea>
+                    <button type="submit" class="donate-button">Donate Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We are always looking forward to meeting and being contacted by people who share our mission. If you are passionate about making a difference and want to collaborate or have any questions, please feel free to reach out to us!</p>
+    <p>hsdbcjhbckubdskcnajdscn</p>
+    <p>hsdbcjhbckubdskcnajdscn</p>
+    <p>hsdbcjhbckubdskcnajdscn</p>
+    <p>hsdbcjhbckubdskcnajdscn</p>
+
+    </section>
+    <section id="our-founders">
+        <h2>Our Founders</h2>
+        <div class="founders-container">
+            <img src="F1.png" alt="Founder 1" class="founder-img">
+            <img src="F2.png" alt="Founder 2" class="founder-img">
+            <img src="F3.png" alt="Founder 3" class="founder-img">
+            <img src="F4.png" alt="Founder 4" class="founder-img">
+            <img src="F5.png" alt="Founder 5" class="founder-img">
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="swiper-container testimonials-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="Test1.png" alt="Testimonial 1" class="testimonial-img">
+                    <p>Great experience, highly recommend!</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="Test2.png" alt="Testimonial 2" class="testimonial-img">
+                    <p>Truly a transformative journey with this team.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="Test3.png" alt="Testimonial 3" class="testimonial-img">
+                    <p>Loved every moment. These guys are amazing!</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://www.facebook.com">Facebook</a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="Home.js"></script>
+</body>
+</html>
